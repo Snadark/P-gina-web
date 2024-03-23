@@ -1,0 +1,127 @@
+/*Primero: El estilo de los títulos. Cada título va a tener estilos distinto. Se va a conservar la jerarquía (h1 será más grande que h2 y esté más grande que h3*/
+/*El único titulo "h1" es el mismo del index*/
+h1{font-size: 45px}
+
+/*El título "h2" es el que más se repite en todos los archivos, decidí darle un estilo distinto*/
+h2{color:darkslategrey;
+    font-size: 30px}
+
+/*El estilo para h3, que aparece pocas veces, también va a tener variaciones*/
+h3{color: darkkhaki;
+    font-size: 20px}
+
+/*Los párrafos van a mantener el mismo estilo, esté hará que sea más armonioso con el resto de la página*/
+/*El tamaño  "large" fue el que más me gustó*/
+p{color: black;font-size:large}
+
+/* Se usó el selector universal para elegir un tipo de letra, elegí cambria porque siempre me ha gustado como se ve */
+/*Para el color usé una combinación de negro*/
+* {font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+color: rgb(17, 13, 13);}
+
+/* Quiero establecer una iamgen como fondo de la página, por lo que la pondré en el cuerpo */
+/*La imagen ya la habia guardado y lo único que hace falta es llamarla con la etiqueta adecuada*/
+/*La imagen afecta el contraste del texto, por lo que voy a hacerla un poco más opaca*/
+/*También adicioné una margen pequeña para que la página no se viera muy pegada al borde*/
+body {
+    margin: 50px;
+    background-image: url(Imagenes/Fondo8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /*esta orden hace que la imagen de fondo no se rompa en las distintas páginas*/
+    background-attachment: fixed;/*Esta orden es para que el fondo se quede estático*/
+    background-color: rgba(255, 255, 255, 1)} /*Este es la orden para hacer la imagen de fondo menos opaca, especificamente el ultimo valor numérico*/
+
+/*A continuación están las ordenes para el estilo de los botones*/
+button {
+    background-color: rgb(152, 238, 231);
+    color: rgb(24, 19, 3);
+    border:hsl(from color h s l);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform:capitalize;
+    }
+/*A continuación se presenta el comando para que el botón cambie de color, y el texto también, cuando el cursor esta encima*/
+.boton:hover {
+        background-color: rgb(16, 70, 65);
+        color: rgb(180, 144, 25);
+      }
+/*Quiero que el botón tome otro color justo cuando le den click*/
+.boton:active {
+    background-color: hsl(128, 51%, 67%);
+  }
+
+
+/*Ahora voy a definir el estilo de las imagenes, quiero que todas estén centradas y tengan bordes*/
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+  }
+
+.contenedor {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+  
+.imagen-derecha {
+    width: 200px; /* Ancho deseado para la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el párrafo */
+  }
+
+.parrafo-izquierdo {
+    flex-grow: 1; /* El párrafo ocupará el espacio restante */
+  }
+
+/*Quiero que el vínculo que lleva a HBO max (en el index) sea más grande y de otro color*/
+.hipervinculo-destacado {
+    font-size: 30px;
+    color: rgb(93, 207, 58);
+    text-decoration: underline; /* Subrayado */
+    font-weight: bold; /* Negrita */
+  }
+
+/*En la tabla de la pestaña "personajes" quería que todas las imagenes tuvieran el mismo tamaño y mantuvieran la resolución*/
+.imagen {
+    width:200px; /* Ancho para todas las imágenes */
+    height: 200px; /* Altura para todas las imágenes */
+    object-fit: cover; /* Ajustar el contenido de la imagen para que se ajuste al tamaño*/
+  }
+
+/*Hay dos páginas con tablas: La de los personajes y la de los créditos. Quiero que todas tengan centrado el texto*/
+table{text-align: center;}
+
+/*Quiero que las tablas de los créditos tengan margenes y también que esten alineadas entre ellas. No quise quitar las viñetas ya que las uso para separar la información*/
+.contenedor-tablas {
+    margin: 20px; /* Márgenes alrededor del contenedor */
+  }
+  
+  .contenedor-tablas table {
+    width: 100%; /* Para que las tablas ocupen todo el ancho del contenedor */
+    margin-bottom: 20px; /* Espacio entre tablas */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+  }
+  
+  .contenedor-tablas td, .contenedor-tablas th {
+    border: 1px solid black; /* Añade bordes a las celdas */
+    padding: 10px; /* Añade relleno a las celdas */
+  }
+
+  /*Quiero que los títulos de cada página sea disntinto al título principal y al resto*/
+  .titulo-distinto {
+    color: rgb(22, 66, 37); /* Color del texto */
+    font-size: 35px; /* Tamaño de fuente */
+    font-weight:1000; /* Peso de la fuente */
+    text-align:left; /* Alineación del texto */
+    text-transform:capitalize; 
+    }
+  
+  
+  
+  
+
+      
+  
